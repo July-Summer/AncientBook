@@ -32,7 +32,6 @@ public class OneAttributeRunnable implements Runnable{
         for(int i = 0; i < loreList.size(); i++)
         {  
             String lore = ColorUtil.stripColor(loreList.get(i).toPlain());
-            AncientBook.log(key);
             if(lore.contains(key)) 
             {
                  vaule += Expression.resolveExpression(Expression.getExpression(lore), isMath);
