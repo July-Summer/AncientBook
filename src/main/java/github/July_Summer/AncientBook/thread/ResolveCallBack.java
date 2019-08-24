@@ -17,7 +17,7 @@ public class ResolveCallBack<T> {
         this.vaule = vaule;
     }
     
-    //�ⶫ��ƨ�ö�û��
+    //这个T完全没有什么屁用
     public T get(Class<T> tClass)
     {
         return tClass.cast(vaule);
