@@ -115,9 +115,7 @@ public class AncientBook{
         if(keyMap.containsKey(token))
         {
             ResolveCallBack scb = ResolveCallBack.builder().flag(false).taskId(AttributeManager.getNewTaskId());
-            
-            AttributeManager.addResolveOneThread(scb, token, LoreUtil.getItemLore(InventoryUtil.getMainInHand(src)));
-            
+            AttributeManager.addResolveOneThread(scb, token, LoreUtil.getItemLore(InventoryUtil.getMainInHand(src)));       
             if(AttributeManager.getCallBacks(scb))
             {
                 return scb.vaule.toString();
